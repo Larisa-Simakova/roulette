@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap&subset=cyrillic-ext");
+
+:root {
+    --black: #111111;
+    --primary: #181717;
+    --white: #fff;
+    --orange: #EF7F1A;
+    --pink: #FF086B;
+}
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+
+body {
+    font-size: 10px;
+    font-family: "Onest", sans-serif;
+    color: var(--white);
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scrollbar-gutter: stable;
+    background: var(--black);
+}
+
+body.lock {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.wrapper.loaded .header {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.container {
+    max-width: 1355px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page {
+    position: relative;
+}
+
+.page__roulette {
+    margin: 3em 0;
+}
+
+.roulette-page__container {
+    padding: 3em 0;
+    background: linear-gradient(242.27deg, #FF7900 32.77%, #FF086B 95.26%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4em;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.text-medium {
+    font-size: 2.4em;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.text-medium span {
+    text-decoration: underline;
+}
+
+.roulette-page__container .title {
+    padding-bottom: 0.37em;
+}
+
+.roulette-window {
+    overflow: hidden;
+    position: relative;
+    width: 110em;
+    height: 50.8em;
+    margin: 4em 0;
+}
+
+.roulette-items {
+    display: flex;
+    gap: 3em;
+    position: absolute;
+    left: 0;
+    transition: left 10s ease;
+}
+
+.roulette-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35em;
+    height: 50.8em;
+    background: url(../img/ticket.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid transparent;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: .6; /* Убираем прозрачность по умолчанию */
+}
+
+.roulette-item.active {
+    transform: scale(1.2); /* Увеличиваем активный элемент */
+    opacity: 1; /* Убираем прозрачность для активного элемента */
+}
+
+.roulette-item img {
+    width: 13em;
+    margin-top: 2.5em;
+}
+
+.roulette-discount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5em 0 4em 0;
+}
+
+.roulette-discount p {
+    color: var(--primary);
+    font-size: 2em;
+}
+
+.roulette-discount p.number {
+    color: var(--orange);
+    font-size: 6em;
+    font-weight: 700;
+}
+
+p.promocode {
+    font-size: 2.6em;
+    font-weight: 600;
+}
+
+p.period {
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--primary);
+    padding: 3em 0 2em 0;
+}
+
+p.text-small {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: var(--primary);
+    border-top: 2px solid var(--orange);
+    padding-top: 2em;
+}
+
+button {
+    color: var(--orange);
+    background: var(--white);
+    padding: 1.5em 5.2em;
+    border-radius: 5.2em;
+    font-size: 1.6em;
+    font-weight: 700;
+    transition: .5s;
+}
+
+button:hover {
+    color: var(--white);
+    background: var(--orange);
+}
+
+/* Стили для неактивной кнопки */
+button.disabled {
+    background: var(--orange);
+    color: var(--white);
+    cursor: not-allowed;
+}

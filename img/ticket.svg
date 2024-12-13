@@ -1,0 +1,27 @@
+<svg width="512" height="750" viewBox="0 0 512 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_2001_1744)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 26C4 11.6406 15.6406 0 30 0H482C496.359 0 508 11.6406 508 26V349C482.043 349 461 370.043 461 396C461 421.957 482.043 443 508 443V716C508 730.359 496.359 742 482 742H30C15.6406 742 4 730.359 4 716V443C29.9574 443 51 421.957 51 396C51 370.043 29.9574 349 4 349V26Z" fill="white"/>
+</g>
+<mask id="mask0_2001_1744" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="504" height="742">
+<mask id="path-2-inside-1_2001_1744" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 26C4 11.6406 15.6406 0 30 0H482C496.359 0 508 11.6406 508 26V349C482.043 349 461 370.043 461 396C461 421.957 482.043 443 508 443V716C508 730.359 496.359 742 482 742H30C15.6406 742 4 730.359 4 716V443C29.9574 443 51 421.957 51 396C51 370.043 29.9574 349 4 349V26Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 26C4 11.6406 15.6406 0 30 0H482C496.359 0 508 11.6406 508 26V349C482.043 349 461 370.043 461 396C461 421.957 482.043 443 508 443V716C508 730.359 496.359 742 482 742H30C15.6406 742 4 730.359 4 716V443C29.9574 443 51 421.957 51 396C51 370.043 29.9574 349 4 349V26Z" fill="white"/>
+<path d="M508 349V350H509V349H508ZM508 443H509V442H508V443ZM4 443V442H3V443H4ZM4 349H3V350H4V349ZM30 -1C15.0883 -1 3 11.0883 3 26H5C5 12.1929 16.1929 1 30 1V-1ZM482 -1H30V1H482V-1ZM509 26C509 11.0883 496.912 -1 482 -1V1C495.807 1 507 12.1929 507 26H509ZM509 349V26H507V349H509ZM462 396C462 370.595 482.595 350 508 350V348C481.49 348 460 369.49 460 396H462ZM508 442C482.595 442 462 421.405 462 396H460C460 422.51 481.49 444 508 444V442ZM509 716V443H507V716H509ZM482 743C496.912 743 509 730.912 509 716H507C507 729.807 495.807 741 482 741V743ZM30 743H482V741H30V743ZM3 716C3 730.912 15.0883 743 30 743V741C16.1929 741 5 729.807 5 716H3ZM3 443V716H5V443H3ZM50 396C50 421.405 29.4051 442 4 442V444C30.5097 444 52 422.51 52 396H50ZM4 350C29.4051 350 50 370.595 50 396H52C52 369.49 30.5097 348 4 348V350ZM3 26V349H5V26H3Z" fill="black" mask="url(#path-2-inside-1_2001_1744)"/>
+</mask>
+<g mask="url(#mask0_2001_1744)">
+<rect x="5" y="319" width="502" height="83" fill="#EF7F1A"/>
+</g>
+<defs>
+<filter id="filter0_d_2001_1744" x="0" y="0" width="512" height="750" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2001_1744"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2001_1744" result="shape"/>
+</filter>
+</defs>
+</svg>
