@@ -159,7 +159,6 @@
 
             // Функция для запуска рулетки
             function start() {
-                // Делаем кнопку неактивной и меняем её стиль
                 $('button').prop('disabled', true).addClass('disabled');
 
                 // Сбрасываем позицию рулетки
@@ -170,37 +169,27 @@
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
 
-                // Вычисляем ширину элемента и отступ между ними
-                let itemWidth = $('.roulette-item').outerWidth(); // Ширина элемента
-                let gap = parseInt($('.roulette-items').css('gap')); // Отступ между элементами
+                let itemWidth = $('.roulette-item').outerWidth();
+                let gap = parseInt($('.roulette-items').css('gap'));
                 let visibleItems = Math.floor($('.roulette-window').width() / (itemWidth + gap)); // Количество видимых элементов
                 let centerIndex = Math.floor(visibleItems / 2); // Индекс центрального элемента
 
-                // Генерируем случайный элемент, который будет в центре
                 let randomIndex = selfRandom(0, $('.roulette-item').length - 1);
 
-                // Вычисляем позицию для остановки рулетки
                 let stopPosition = randomIndex * (itemWidth + gap) - centerIndex * (itemWidth + gap);
 
-                // Анимация перемещения с линейной скоростью
                 $('.roulette-items').animate({
                     left: -stopPosition
-                }, {
-                    duration: 3000, // Длительность анимации
-                    easing: 'linear' // Линейная скорость
-                }, function () {
-                    // После завершения анимации, выделяем центральный элемент
+                }, 5000, function () {
                     $('.roulette-item').removeClass('active');
                     $('.roulette-items').find('.roulette-item').eq(randomIndex).addClass('active');
 
-                    // Добавляем задержку перед тем, как кнопка снова станет активной
                     setTimeout(function () {
                         $('button').prop('disabled', false).removeClass('disabled');
-                    }, 3000); // Задержка 500 мс
+                    }, 3000);
                 });
             }
 
-            // Привязываем функцию к кнопке
             $('button').on('click', start);
         });
     </script>
