@@ -1,8 +1,63 @@
-/* @font-face {
-    font-family: Cormorant Unicase;
+@font-face {
+    font-family: "Roboto Mono";
     font-display: swap;
-    src: url("../fonts/CormorantUnicase-Light.woff2") format("woff2"), url("../fonts/CormorantUnicase-Light.woff") format("woff");
+    src: url("../fonts/Roboto_Mono/RobotoMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Onest";
+    font-display: swap;
+    src: url("../fonts/Onest/Onest-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
-    unicode-range: U+21-23, U+25-5F, U+61-7E, U+AB, U+BB, U+401, U+410-44F, U+451, U+2013, U+2014, U+2018, U+2019, U+201C-201E, U+2026, U+20BD;
-} */
+}
+
+@font-face {
+    font-family: "Onest";
+    font-display: swap;
+    src: url("../fonts/Onest/Onest-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Onest";
+    font-display: swap;
+    src: url("../fonts/Onest/Onest-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Onest";
+    font-display: swap;
+    src: url("../fonts/Onest/Onest-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Onest";
+    font-display: swap;
+    src: url("../fonts/Onest/Onest-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-display: swap;
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-display: swap;
+    src: url("../fonts/Montserrat_Alternates/MontserratAlternates-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
